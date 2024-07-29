@@ -1,21 +1,25 @@
-{% extends "base.html" %}
-
 {% block title %}Home{% endblock %}
 
 {% block content %}
-<h1 class="display-4">Hello Flask!</h1>
 
-<p class="lead">This is a template to get you spinning up with <code>flask</code> and <code>Bootstrap</code>.</p>
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://pyscript.net/releases/2024.1.1/core.css">
+        <script type="module" src="https://pyscript.net/releases/2024.1.1/core.js"></script>
+    </head>
+    <body>
+        <h1 class="display-4">Pizza Shop Game!</h1>
+        <script type="py" terminal>
+            from pyscript import display
+            print("hello name!")
+        </script>
+        <script type="py" src="./my-worker-code.py" worker>
+            
+        </script>
 
-<img class="img-fluid" src="{{ url_for('static', filename='images/doing-great.jpg') }}"
-    alt="A giant person blocks a little guy from arrows. The giant says 'you're doing great and im so freaken proud of you', the little guy is labeled 'undergrads'">
 
-<p>
-    This is based on the Bootstrap "<em>Sticky Footer Navbar Template</em>", don't forget to <a
-        href="https://getbootstrap.com/docs/5.3/examples/sticky-footer-navbar/">skim how the example works</a> in the
-    documentation!
-</p>
-
-<p>Remember to <em>read your README</em>, it has lots of hints that will help you throughout the semester.</p>
+    </body>
+</html>
 
 {% endblock %}
