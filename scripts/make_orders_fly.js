@@ -1,4 +1,4 @@
-window.addEventListener("keydown", function(e) {
+function order_fly() {
   const node = document.createElement("li");
   const DOM_img = document.createElement("img");
   DOM_img.src = "../static/img/order.png";
@@ -15,4 +15,4 @@ window.addEventListener("keydown", function(e) {
     clearInterval(intervalId);
     node.remove();
   }, "400");
-});
+};

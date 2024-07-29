@@ -1,4 +1,4 @@
-window.addEventListener("click", function() {
+function box_fly() {
   const node = document.createElement("li");
   const DOM_img = document.createElement("img");
   DOM_img.src = "../static/img/box.png";
@@ -15,4 +15,4 @@ window.addEventListener("click", function() {
     clearInterval(intervalId);
     node.remove();
   }, "400");
-});
+};
