@@ -1,0 +1,37 @@
+/* Global */
+body {
+  background-color: #BCD7EE;
+}
+
+.pizzeria {
+  height: 90vh;
+  width: auto;
+
+  margin-top: 2vh;
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+}
+
+#order-list, #box-list {
+  list-style-type: none;
+}
+
+.box {
+  position: absolute;
+  left: 800px;
+  top: 50vh;
+  height: 12vh;
+  width: auto;
+  /* display: none; */
+}
+
+.order {
+  position: absolute;
+  left: -100px;
+  top: 50vh;
+  height: 12vh;
+  width: auto;
+}
